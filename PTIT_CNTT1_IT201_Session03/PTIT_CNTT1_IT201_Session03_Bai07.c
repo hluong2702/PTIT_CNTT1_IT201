@@ -4,7 +4,7 @@
 int sumK(int **arr, int rows, int cols, int k) {
     int sum = 0;
     for (int j = 0; j < cols; j++) {
-        sum += arr[k][j];
+        sum += arr[k - 1][j];
     }
     return sum;
 }
